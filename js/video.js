@@ -33,10 +33,10 @@ document.querySelector("#faster").addEventListener("click", function() {
 document.querySelector("#skip").addEventListener("click", function() {
 	if (video.currentTime < video.duration - 5){
 		video.currentTime = video.currentTime + 5;
-	};
+	}
 	else {
 		video.currentTime = 0;
-	};
+	}
 	console.log("Current Time: " + video.currentTime)
 	console.log(video.duration)
 	video.play()
@@ -64,39 +64,17 @@ document.querySelector("#original").addEventListener("click", function (){
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 document.querySelector("#mute").addEventListener("click", function(){
 	console.log("Mute");
 	if (video.muted == false) {
 		video.muted = true;
     	document.getElementById("mute").innerHTML = "Unmute";
-	};
+	}
 	else 
 	{
-    	video.muted == false; 
-    	document.getElementById("mute").innerHTML = "Mute";
+    	video.muted = false; 
+		document.getElementById("mute").innerHTML = "Mute";
+	}
 	});
 
 
